@@ -52,6 +52,7 @@ function getDurationForStock(timeSeriesType) {
       console.log("data :", data);
 
       if (!("Meta Data" in data)) {
+        alert("invalid data");
         console.log("No Data");
         return;
       }

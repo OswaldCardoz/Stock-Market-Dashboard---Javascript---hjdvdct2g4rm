@@ -3,6 +3,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f4f4f4;
+  color: #333;
 }
 
 header {
@@ -17,6 +18,7 @@ header {
   border: 1px solid #ccc;
   border-radius: 5px;
   width: 70%;
+  font-size: 16px;
 }
 
 .search-button {
@@ -26,6 +28,7 @@ header {
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
+  transition: background-color 0.3s; /* Add transition for hover effect */
 }
 
 .button-container {
@@ -44,6 +47,7 @@ header {
   margin: 0 10px;
   cursor: pointer;
   width: 160px;
+  transition: background-color 0.3s; /* Add transition for hover effect */
 }
 
 .section {
@@ -67,6 +71,13 @@ header {
   height: 50px;
   font-weight: bold;
 }
+#watchlist-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
 
 .watchlist-item {
   display: flex;
@@ -77,6 +88,7 @@ header {
   border-radius: 10px;
   background-color: #999;
   box-shadow: 0 2px 5px #3333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .icon {
@@ -215,4 +227,29 @@ header {
 
 .hidden {
   display: none;
+}
+.button-container .action-button:hover {
+  background-color: #555; /* Change color on hover */
+  transform: scale(1.1);
+  transition: transform 0.2s;
+}
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+/* CSS for small screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  .main-container {
+    max-width: 90%; /* Reduce the container width for small screens */
+  }
+}
+.search-button:hover {
+  background-color: #555; /* Change background color on hover */
+}
+
+/* Change the color of the search icon on hover */
+.search-button:hover i {
+  color: #ff9900; /* Change the icon color on hover */
 }
