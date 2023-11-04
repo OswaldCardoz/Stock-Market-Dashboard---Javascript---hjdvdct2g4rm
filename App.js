@@ -134,4 +134,4 @@ function getDurationForStock(timeSeriesType) {
       );
     }
   );
-}
+} 
