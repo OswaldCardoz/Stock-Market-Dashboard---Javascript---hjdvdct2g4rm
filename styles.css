@@ -248,6 +248,7 @@ header {
     max-width: 90%; /* Reduce the container width for small screens */
     .watchlist-item {
       flex-direction: row; /* Stack watchlist items horizontaly on smaller screens */
+      padding: 10px; /* Adjust padding for better spacing */
     }
   
     .watchlist-item .icon {
