@@ -113,6 +113,7 @@ function getDurationForStock(timeSeriesType) {
             <button type="button" class="remove-button" onclick="removeData(${ID})">+</button>
           </div>
           <div id="${ID}" class="item-result mt-10 hidden">
+                  <div class="table-container">
                   <table class="custom-table">
                       <thead>
                           <tr>
@@ -128,6 +129,7 @@ function getDurationForStock(timeSeriesType) {
                           ${stockTableData[ID]}                     
                       </tbody>
                   </table>
+                  </div>
               </div>
         </div>
       `

@@ -72,11 +72,11 @@ header {
   font-weight: bold;
 }
 #watchlist-container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  margin-top: 20px;
+  /* background-color: #fff; */
+  padding: 5px;
+  /* border-radius: 5px; */
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */
+  margin-top: 5px;
 }
 
 .watchlist-item {
@@ -145,6 +145,12 @@ header {
   z-index: 999;
 }
 
+/* table */
+
+.table-container {
+  overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
 .custom-table {
   border-collapse: collapse;
   width: 100%;
@@ -162,6 +168,7 @@ header {
 .custom-table tbody {
   background-color: #777;
 }
+
 
 .main-container {
   max-width: 600px;
@@ -203,10 +210,11 @@ header {
 
 .container {
   background-color: #ccc;
-  padding: 10px;
+  padding: 5px;
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .search-bar {
@@ -233,19 +241,22 @@ header {
   transform: scale(1.1);
   transition: transform 0.2s;
 }
-/* .container {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-} */
 
 /* CSS for small screens (e.g., mobile phones) */
 @media (max-width: 768px) {
   .main-container {
     max-width: 90%; /* Reduce the container width for small screens */
+    .watchlist-item {
+      flex-direction: row; /* Stack watchlist items horizontaly on smaller screens */
+    }
+  
+    .watchlist-item .icon {
+      margin: 10px 0; /* Add spacing between icon and text */
+    }
   }
 }
+
+/* animation */
 .search-button:hover {
   background-color: #555; /* Change background color on hover */
 }
@@ -254,3 +265,4 @@ header {
 .search-button:hover i {
   color: #ff9900; /* Change the icon color on hover */
 } 
+
